@@ -16,6 +16,8 @@ This V2X package is designed to integrate directly with an [Autoware mini](https
 
 This example shows how to run a “Hidden Pedestrian” scenario in CARLA, adjust weather settings, and then observe V2X behavior (pedestrian and traffic‐light messages) under poor visibility.
 
+The entire `v2x` folder (containing all four scripts and this README) should live inside the `nodes/` directory of your Autoware Mini workspace.
+
 1. **Edit the scenario weather**  
    - Open `PedestrianCrossingFront.xosc` (located in your CARLA scenarios folder).  
    - Under the `<Weather>` section, adjust values such as `visualRange` (in meters) and `precipitationIntensity` (0.0–1.0) to simulate fog, rain, etc.  
@@ -36,21 +38,16 @@ This example shows how to run a “Hidden Pedestrian” scenario in CARLA, adjus
    ```bash
    roslaunch autoware_mini start_carla.launch use_scenario_runner:=true
    
-4. **Select the “Hidden Pedestrian” Scenario**
+4. **Select the “PedestrianCrossingFront” Scenario**
 5. **Run the V2X Publisher Nodes in two separate terminals**
 
    ```bash
    python3 v2xPedestrian.py
    python3 v2xTrafficLights.py
    
-6. **Run the V2X Publisher Nodes**
+6. **Run the V2X Processing**
     ```bash
    python3 v2xProcessing.py
    
 Result:
-You’ll see that—even in heavy rain or fog—the V2X‐augmented triggers an alert/braking event and the traffic‐light messages keep Autoware Mini respecting the signal phases. This demonstrates how V2X can improve safety when sensor-based detection is degraded by bad weather.
-
-
-
-
-
+You’ll see that—even in heavy rain or fog—the V2X‐augmented triggers an alert/braking event.
