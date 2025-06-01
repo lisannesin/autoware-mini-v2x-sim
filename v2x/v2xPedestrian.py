@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Subscribe to /detected_objects, filter for cars (or pedestrians), send I2V JSON messages,
-and visualize each detected object as a moving cube in RViz.
-"""
 
 import rospy
 import json
