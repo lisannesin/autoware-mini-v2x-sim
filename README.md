@@ -45,7 +45,7 @@ The entire `v2x` folder (containing all four scripts and this README) should liv
    python3 v2xPedestrian.py
    python3 v2xTrafficLights.py
    
-6. **Run the V2X Publisher Nodes**
+6. **Run the V2X Processing**
     ```bash
    python3 v2xProcessing.py
    
