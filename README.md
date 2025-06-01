@@ -10,7 +10,7 @@ This folder contains four Python scripts that simulate and filter V2X (Vehicle-t
 ## Compatibility with Autoware Mini
 
 
-This V2X package is designed to integrate directly with an [Autoware Mini](https://github.com/UT-ADL/autoware_mini). Once Autoware Mini is running (per the instructions in its README), you can launch the four V2X scripts (`v2xVehicle.py`, `v2xPedestrian.py`, `v2xTrafficLights.py`, `v2xProcessing.py`) in parallel so that Autoware Mini receives a consolidated “filtered” V2X stream.
+This V2X package is designed to integrate directly with an [Autoware Mini](https://github.com/UT-ADL/autoware_mini). Once Autoware Mini is running (per the instructions in its README), you can launch the four V2X scripts (`v2xVehicle.py`, `v2xPedestrian.py`, `v2xTrafficLights.py`, `v2xProcessing.py`) in parallel.
 
 ## Example: Testing in Bad Weather with CARLA & Autoware Mini
 
